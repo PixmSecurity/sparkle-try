@@ -1,0 +1,61 @@
+missing module named pyimod03_importers - imported by /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PyInstaller/loader/rthooks/pyi_rth_pkgres.py
+missing module named 'pkg_resources.extern.pyparsing' - imported by pkg_resources._vendor.packaging.requirements, pkg_resources._vendor.packaging.markers
+missing module named netbios - imported by uuid
+missing module named win32wnet - imported by uuid
+missing module named ordereddict - imported by pkg_resources._vendor.pyparsing
+missing module named _thread.RLock - imported by _thread, pkg_resources._vendor.pyparsing
+missing module named _thread.get_ident - imported by _thread, future.backports.misc
+missing module named 'win32com.shell' - imported by pkg_resources._vendor.appdirs
+missing module named 'com.sun' - imported by pkg_resources._vendor.appdirs
+missing module named com - imported by pkg_resources._vendor.appdirs
+missing module named win32api - imported by pkg_resources._vendor.appdirs
+missing module named win32com - imported by pkg_resources._vendor.appdirs
+missing module named _winreg - imported by winreg, platform, mimetypes, urllib, pkg_resources._vendor.appdirs
+missing module named pkg_resources.extern.packaging - imported by pkg_resources.extern, pkg_resources
+missing module named pkg_resources.extern.appdirs - imported by pkg_resources.extern, pkg_resources
+missing module named 'importlib.machinery' - imported by pkg_resources
+missing module named 'pkg_resources.extern.six.moves' - imported by pkg_resources, pkg_resources._vendor.packaging.requirements
+missing module named pkg_resources.extern.six - imported by pkg_resources.extern, pkg_resources
+missing module named _imp - imported by pkg_resources
+missing module named OverrideFrom23 - imported by Carbon.Res
+missing module named SOCKS - imported by ftplib
+missing module named rourl2path - imported by urllib
+missing module named 'java.lang' - imported by platform, xml.sax._exceptions
+missing module named _xmlplus - imported by xml
+missing module named vms_lib - imported by platform
+missing module named java - imported by platform
+missing module named winreg.HKEY_LOCAL_MACHINE - imported by winreg, platform
+missing module named winreg.CloseKey - imported by winreg, platform
+missing module named winreg.QueryValueEx - imported by winreg, platform
+missing module named winreg.OpenKeyEx - imported by winreg, platform
+missing module named win32pipe - imported by platform
+missing module named nt - imported by os, ntpath, /Users/numino/Desktop/santan-pixm/new-update/run.py
+missing module named os2 - imported by os, /Users/numino/Desktop/santan-pixm/new-update/run.py
+missing module named _emx_link - imported by os, /Users/numino/Desktop/santan-pixm/new-update/run.py
+missing module named ce - imported by os, /Users/numino/Desktop/santan-pixm/new-update/run.py
+missing module named riscos - imported by os, /Users/numino/Desktop/santan-pixm/new-update/run.py
+missing module named riscospath - imported by os, /Users/numino/Desktop/santan-pixm/new-update/run.py
+missing module named riscosenviron - imported by os, /Users/numino/Desktop/santan-pixm/new-update/run.py
+missing module named msvcrt - imported by subprocess, getpass, /Users/numino/Desktop/santan-pixm/new-update/run.py
+missing module named _subprocess - imported by subprocess, /Users/numino/Desktop/santan-pixm/new-update/run.py
+missing module named 'org.python' - imported by pickle, /Users/numino/Desktop/santan-pixm/new-update/run.py, xml.sax
+missing module named _sha - imported by hashlib, /Users/numino/Desktop/santan-pixm/new-update/run.py
+missing module named _md5 - imported by hashlib, /Users/numino/Desktop/santan-pixm/new-update/run.py
+missing module named _sha256 - imported by hashlib, /Users/numino/Desktop/santan-pixm/new-update/run.py
+missing module named _sha512 - imported by hashlib, /Users/numino/Desktop/santan-pixm/new-update/run.py
+missing module named org - imported by copy, /Users/numino/Desktop/santan-pixm/new-update/run.py
+missing module named objc.loadBundle - imported by objc, objc._lazyimport, /Users/numino/Desktop/santan-pixm/new-update/run.py
+missing module named 'dbm.ndbm' - imported by future.moves.dbm.ndbm
+missing module named gdbm - imported by anydbm, future.moves.dbm.gnu
+missing module named 'dbm.gnu' - imported by future.moves.dbm.gnu
+missing module named 'dbm.dumb' - imported by future.moves.dbm.dumb
+missing module named bsddb3 - imported by bsddb
+missing module named _pybsddb - imported by bsddb, bsddb.db
+missing module named _dummy_threading - imported by dummy_threading
+missing module named _datetime - imported by future.backports.datetime
+missing module named reprlib.recursive_repr - imported by reprlib, future.backports.misc
+missing module named objc.nosuchclass_error - imported by objc, objc._lazyimport
+missing module named objc.getClassList - imported by objc, objc._lazyimport
+missing module named objc.NULL - imported by objc, objc._properties
+missing module named objc._C_BOOL - imported by objc, objc._properties
+missing module named ElementC14N - imported by xml.etree.ElementTree
