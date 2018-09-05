@@ -5,8 +5,8 @@ block_cipher = None
 
 a = Analysis(['run.py'],
              pathex=['/Users/numino/Desktop/santan-pixm/new-update'],
-             binaries=[('/System/Library/Frameworks/Tk.framework/Tk','tk'),
-                ('/System/Library/Frameworks/Tcl.framework/Versions/8.5/Tcl','tcl')],
+             binaries=[('/System/Library/Frameworks/Tk.framework/Tk','.'),
+                ('/System/Library/Frameworks/Tcl.framework/Versions/8.5/Tcl','.')],
              datas=[],
              hiddenimports=["Tkinter"],
              hookspath=['pyinstaller-hooks'],
