@@ -14,12 +14,12 @@ class Application(Frame):
     def check_for_updates(self):
         sparkle_path = pathForFramework(self.SPARKLE_PATH)
         loadBundle('Sparkle', self.objc_namespace, bundle_path=sparkle_path)
-
         sparkle = self.objc_namespace['SUUpdater'].sharedUpdater()
-        sparkle.setAutomaticallyChecksForUpdates_(True)
-        sparkle.setAutomaticallyDownloadsUpdates_(True)
+        #sparkle.setAutomaticallyChecksForUpdates_(True)
+        #sparkle.setAutomaticallyDownloadsUpdates_(True)
         NSURL = self.objc_namespace['NSURL']
         sparkle.setFeedURL_(NSURL.URLWithString_(self.APPCAST_URL))
+        sparkle.checkForUpdateInformation()
         sparkle.checkForUpdatesInBackground()
         print "Check for updates in background"
     

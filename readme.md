@@ -5,10 +5,14 @@ For building the code :
 
 The above step will generate an app build in dist folder, then do the below changes :
 - In info.plist make below entries
+
 <key>SUPublicDSAKeyFile</key>
 <string>dsa_pub.pem</string>
 <key>CFBundleVersion</key>
 <string>1.0.0</string>
+<key>SUFeedURL</key>
+<string>https://enterprisemsidev.blob.core.windows.net/tempcont/updatecast.xml</string>
+
 - Add Sparkle.framework to the Frameworks folder of app
 - Add the public key to the Resources folder of app
 - To test app is running : open ./dist/run.app/Contents/MacOS/run
