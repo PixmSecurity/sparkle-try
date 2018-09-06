@@ -1,8 +1,32 @@
 from Tkinter import *
+from objc import pathForFramework, loadBundle
+import tkMessageBox
 
 class Application(Frame):
-    def say_hi(self):
-        print "hi there, everyone!"
+    def __init__(self, APPCAST_URL, SPARKLE_PATH, master=None):
+        Frame.__init__(self, master)
+        self.APPCAST_URL = APPCAST_URL
+        self.SPARKLE_PATH = SPARKLE_PATH
+        self.objc_namespace = dict()
+        self.pack()
+        self.createWidgets()
+    
+    def check_for_updates(self):
+        sparkle_path = pathForFramework(self.SPARKLE_PATH)
+        loadBundle('Sparkle', self.objc_namespace, bundle_path=sparkle_path)
+
+        sparkle = self.objc_namespace['SUUpdater'].sharedUpdater()
+        sparkle.setAutomaticallyChecksForUpdates_(True)
+        sparkle.setAutomaticallyDownloadsUpdates_(True)
+        NSURL = self.objc_namespace['NSURL']
+        sparkle.setFeedURL_(NSURL.URLWithString_(self.APPCAST_URL))
+        sparkle.checkForUpdatesInBackground()
+        print "Check for updates in background"
+    
+    def ask_quit(self):
+        if tkMessageBox.askokcancel("Quit", "You want to quit now?"):
+            self.objc_namespace['NSApplication'].sharedApplication().terminate_(None)
+            self.destroy()
 
     def createWidgets(self):
         self.QUIT = Button(self)
@@ -12,18 +36,9 @@ class Application(Frame):
 
         self.QUIT.pack({"side": "left"})
 
-        self.hi_there = Button(self)
-        self.hi_there["text"] = "Hello",
-        self.hi_there["command"] = self.say_hi
+        self.check_updates = Button(self)
+        self.check_updates["text"] = "CheckForUpdates",
+        self.check_updates["command"] = self.check_for_updates
 
-        self.hi_there.pack({"side": "left"})
+        self.check_updates.pack({"side": "left"})
 
-    def __init__(self, master=None):
-        Frame.__init__(self, master)
-        self.pack()
-        self.createWidgets()
-
-# root = Tk()
-# app = Application(master=root)
-# app.mainloop()
-# root.destroy()
